@@ -1,6 +1,8 @@
-# Chance-constrained operating room scheduling: FNN vs. piecewise-linear vs. scenario-based MILPs
+# Operating room scheduling: FNN vs. piecewise-linear vs. scenario-based MILPs
 
-> \*\*TODO:\*\* paper title, authors and DOI.
+> Handling Overtime Constraints in Mixed Integer Linear Programming for Surgical
+Scheduling: A Comparison of Neural Network and Classical Linearization
+Techniques
 
 This repository contains the code for the paper *"<PAPER TITLE>"*. It
 compares four ways of handling uncertain surgery durations in a
