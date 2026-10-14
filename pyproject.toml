@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orsched"
+version = "1.0.0"
+description = "Chance-constrained operating room scheduling with FNN, piecewise-linear and scenario-based MILPs"
+authors = [{ name = "Cindy Pistorius" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas>=2.0",
+    "scipy",
+    "scikit-learn",
+    "torch",
+    "gurobipy",
+    "gurobi-machinelearning",
+    "matplotlib>=3.9",
+    "seaborn",
+    "openpyxl",
+    "tqdm",
+]
+
+[tool.setuptools]
+packages = ["orsched"]

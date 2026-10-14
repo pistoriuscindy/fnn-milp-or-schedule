@@ -1,0 +1,12 @@
+numpy
+pandas>=2.0
+scipy
+scikit-learn
+torch
+gurobipy                 # needs a full (e.g. free academic) Gurobi licence
+gurobi-machinelearning
+matplotlib>=3.9
+seaborn
+openpyxl
+tqdm
+-e .                     # installs the orsched package from this folder

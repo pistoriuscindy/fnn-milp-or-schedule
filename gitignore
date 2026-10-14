@@ -1,0 +1,26 @@
+# --- Data: never commit (patient data). Only the format description is shared. ---
+data/*
+!data/README.md
+data_synthetic/
+
+# --- Generated output ---
+results/
+
+# --- Models: keep the trained network and PLF breakpoints used in the paper ---
+models/*
+!models/final_model.pt
+!models/plf_breakpoints.csv
+
+# --- Python / editors ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.venv/
+venv/
+.ipynb_checkpoints/
+.spyproject/
+.idea/
+.vscode/
+.DS_Store
+*.log
