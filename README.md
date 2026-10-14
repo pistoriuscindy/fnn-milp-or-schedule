@@ -4,11 +4,13 @@
 Scheduling: A Comparison of Neural Network and Classical Linearization
 Techniques
 
-This repository contains the code for the paper *"<PAPER TITLE>"*. It
+This repository contains the code for the paper *"Handling Overtime Constraints in Mixed Integer Linear Programming for Surgical
+Scheduling: A Comparison of Neural Network and Classical Linearization
+Techniques"*. It
 compares four ways of handling uncertain surgery durations in a
-chance-constrained, multi-day operating theatre (OT) scheduling MILP:
+overtime probability-constrained, multi-day operating room (OR) scheduling MILP:
 
-|Method|Module|Chance constraint and expected overtime|
+|Method|Module|Overtime probability constraint and expected overtime|
 |-|-|-|
 |`FNN\_implicit`|`orsched/milp\_fnn.py`|A trained ReLU network predicts the (1-α)-percentile and the tail expectation of the total OT-day duration (lognormal, Fenton–Wilkinson). Embedded with [gurobi-machinelearning](https://github.com/Gurobi/gurobi-machinelearning).|
 |`FNN\_explicit\_lp`|`orsched/milp\_fnn.py`|The same network, embedded with explicit big-M ReLU constraints and LP-based bound tightening.|
@@ -119,8 +121,7 @@ python scripts/05\_run\_milp.py
 ```
 
 Every combination of method × dataset × runtime × α is solved. The runtime
-is the total budget per run: model building (including SBM's big-M
-preprocessing and the FNN bound tightening) plus solving. Each run is saved to
+is the total budget per run. Each run is saved to
 `results/milp/<method>/<dataset>/runtime\_<s>/alpha\_<code>/`:
 
 |file|content|
