@@ -146,6 +146,22 @@ python scripts/10\_check\_overtime\_cases.py             # would each method acc
 
 All output goes to `results/`.
 
+## License
+
+Copyright (C) 2026 Cindy Pistorius
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. 
+
+Note: the code depends on Gurobi, which is proprietary software and is not
+covered by this license. A separate Gurobi licence is required to run the models.
+
 ## Contact
 
 Cindy Pistorius — c.pistorius@erasmusmc.nl
